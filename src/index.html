@@ -7,9 +7,18 @@
     <title>Homework 10</title>
   </head>
   <body>
-    <input type="text" id="search-box" />
+    <input
+      type="text"
+      id="search-box"
+      autocomplete="off"
+      onkeydown="if(!/[a-zA-Z]/i.test(event.key)){swal(`Please enter only English letters`,`Important Message`,  `info`); }"
+      required
+    />
+    <div class="lds-dual-ring"></div>
     <ul class="country-list"></ul>
     <div class="country-info"></div>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
     <script src="index.js" type="module"></script>
   </body>

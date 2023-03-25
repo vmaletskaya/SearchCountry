@@ -75,7 +75,6 @@ body {
 .card>div>img {
   object-fit: contain;
   width: 100%;
-  margin-bottom: 5px;
   height: fit-content;
   align-self: center;
 }
@@ -200,8 +199,6 @@ body {
   }
 
 }
-
-
 
 .country-list {
   display: block;

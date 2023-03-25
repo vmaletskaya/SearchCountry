@@ -1,4 +1,3 @@
-
 import './css/styles.css';
 import { fetchCountries, showSpinner } from './fetchCountries.js';
 import Notiflix from 'notiflix';
@@ -67,19 +66,19 @@ function cardMarkup(obj) {
   refs.countryList.classList.remove('isVisible');
   refs.countryInfoCard.insertAdjacentHTML(
     'beforeend',
-    `<a class ="card" href=${obj.link} target="_blank">
+    `<div class ="card">
             <div>
                 <img src = "${obj.flag}" alt="Flag" width="600" height="300"/>
             </div>
             <ul>
-                <li><p>Населення:</p> ${obj.population} людей</li>
-                <li><p>Мови:</p> ${obj.language}</li>
+                <li><p>Population:</p> ${obj.population}</li>
+                <li><p>Languages:</p> ${obj.language}</li>
             </ul>
             <ol class="bottom-fr">
               <li><splan class ="country">${obj.nameOfficial}</span></li>
-              <li><p>Cтолиця:</p> ${obj.capital}</li>
+              <li><p>Capital:</p> ${obj.capital}</li>
             </ol>
-    </a>`
+    </div>`
   );
 }
 function listMarkup(obj) {

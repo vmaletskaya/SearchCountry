@@ -18,8 +18,7 @@ function fetchCountries(name) {
           .toString()
           .split(',')
           .join(', ');
-        const link = e.maps.googleMaps;
-        return { nameOfficial, capital, population, flag, language, link };
+        return { nameOfficial, capital, population, flag, language};
       });
       showSpinner("none")
       return obj;

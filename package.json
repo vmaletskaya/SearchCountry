@@ -2,10 +2,10 @@
   "name": "parcel-project-template",
   "version": "2.0.0",
   "description": "",
-  "homepage": "hhttps://github.com/vmaletskaya/goit-js-hw-10",
+  "homepage": "hhttps://github.com/vmaletskaya/SearchCountry",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /goit-js-hw-10/"
+    "build": "parcel build src/*.html --public-url /SearchCountry/"
   },
   "repository": {
     "type": "git",
